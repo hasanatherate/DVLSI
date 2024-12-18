@@ -1,0 +1,40 @@
+
+
+1. **Compile the Main Verilog File**:  
+   `ncvlog filename.v -mess`
+
+2. **Compile the Testbench File**:  
+   `ncvlog filename-test.v -mess`
+
+3. **Elaborate the Testbench**:  
+   `ncelab modulename_of_testbench -mess`
+
+4. **Run the Simulation**:  
+   `ncsim modulename_of_testbench -mess`
+
+5. **Open Simulation in NCLaunch**:  
+   Use NCLaunch to view results and check for errors.
+
+6. **Launch Genus**:  
+   `genus -gui`
+
+7. **Load Libraries and HDL Files**:  
+   `read_lib /path/to/slow.lib`  
+   `read_hdl filename.v`
+
+8. **Elaborate the Design**:  
+   `elaborate`
+
+9. **View Schematic in Genus**:  
+   Navigate to the Schematic view in the Genus GUI.
+
+10. **Synthesize the Design**:  
+    `synthesize -to_mapped`
+
+11. **Generate Reports**:  
+    `report timing`  
+    `report power`  
+    `report area`
+
+
+

@@ -1,0 +1,6 @@
+set_input_delay -max 0.5 [all_inputs]
+set_output_delay -max 0.15 [all_outputs]
+set_input_transition 0.1 [all_inputs]
+set_max_capacitance 2 [get_ports]
+set_load 0.10 [all_outputs]
+set_max_fanout 20.00 [current_design]
