@@ -1,0 +1,21 @@
+
+**Analog Design Steps in Cadence Virtuoso (for DVLSI)**
+
+1. **Create a New Library**:  
+   Open Virtuoso and go to **File → New → Library**. Choose **gpdk180** and click **OK**.
+
+2. **Create a New Cellview**:  
+   Go to **File → New → Cellview**, select **gpdk180**, and set the width for **PMOS** and **NMOS**.
+
+3. **Create Symbol**:  
+   Create a symbol for the gate (NAND/NOR) and load the **Model Library** via **ADE → Setup**.
+
+4. **Perform Analysis**:  
+   Go to **ADE → Analysis** to set up simulations like **Transient** or **AC**.
+
+5. **Edit Cellview Variables**:  
+   Edit cellview variables through **ADE → Variables → Edit** and import settings if needed.
+
+6. **Perform Simulation**:  
+   Set up parametric analysis and use **Tools → Calculator** for calculations like power or total delay.
+
