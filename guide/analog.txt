@@ -13,3 +13,19 @@ Create Test Bench: File > New > Cell View, name it (e.g., inverter_TB), and crea
 Add Sources: Add inverter symbol, voltage sources (Vpulse, VDC), ground, and output pin.
 Run Simulation: Launch ADE L, configure transient (200ns) and DC analysis (0-1.8V), and select outputs.
 View Results: Run simulation to view transient and DC responses, then save and close.
+
+Log in to the analog account and open the terminal.
+Change the directory and start Virtuoso using the relevant command.
+Create a library in Virtuoso, attach it to the gpdk 180 technology library.
+Create a cell view under the library and assign a schematic view.
+Place PMOS and NMOS transistors in the schematic from the gpdk 180 library.
+Add input and output pins (vdd, vss, vin, vout) to the schematic.
+Connect the components using wires and validate the connections.
+Create a symbol for the schematic with correct pin placements.
+Design a test circuit by placing the inverter symbol in a new cell view.
+Add voltage sources (Vpulse and VDC) and ground components to the test circuit.
+Name input/output lines and validate the test circuit.
+Perform transient and DC analysis using ADE, specifying simulation parameters.
+Plot input/output waveforms and adjust parameters for DC response.
+Run parametric analysis to analyze the impact of variations.
+Calculate delay and intersection values from simulation results.
