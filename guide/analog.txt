@@ -4,18 +4,12 @@
 1. **Create a New Library**:  
    Open Virtuoso and go to **File → New → Library**. Choose **gpdk180** and click **OK**.
 
-2. **Create a New Cellview**:  
-   Go to **File → New → Cellview**, select **gpdk180**, and set the width for **PMOS** and **NMOS**.
-
-3. **Create Symbol**:  
-   Create a symbol for the gate (NAND/NOR) and load the **Model Library** via **ADE → Setup**.
-
-4. **Perform Analysis**:  
-   Go to **ADE → Analysis** to set up simulations like **Transient** or **AC**.
-
-5. **Edit Cellview Variables**:  
-   Edit cellview variables through **ADE → Variables → Edit** and import settings if needed.
-
-6. **Perform Simulation**:  
-   Set up parametric analysis and use **Tools → Calculator** for calculations like power or total delay.
-
+Create Library: File > New > Library, name it (e.g., ATMECE), attach to gpdk180.
+Create Cell View: Under the library, create a new cell view (e.g., inv) and open schematic editor.
+Add Components: Add PMOS and NMOS from gpdk180, and create pins (VDD, VSS, Vin, Vout).
+Wire Circuit: Connect components using the Wire Narrow Tool per the schematic diagram.
+Check and Save: Verify the schematic with Check and Save to ensure no errors.
+Create Test Bench: File > New > Cell View, name it (e.g., inverter_TB), and create a symbol.
+Add Sources: Add inverter symbol, voltage sources (Vpulse, VDC), ground, and output pin.
+Run Simulation: Launch ADE L, configure transient (200ns) and DC analysis (0-1.8V), and select outputs.
+View Results: Run simulation to view transient and DC responses, then save and close.
