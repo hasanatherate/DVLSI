@@ -1,0 +1,75 @@
+inverter
+vdd
+     ▼
+     |
+    [P]  PMOS
+     |
+vin--+--vout
+     |
+    [N]  NMOS
+     |
+     ▼
+    gnd
+NAND
+vdd
+       ▼
+       |
+      [P]--+
+       |   |
+   A---+   [P]
+           |
+   B-------+----Y
+           |
+       +--[N]
+       |   |
+       +--[N]
+           |
+           ▼
+          gnd
+NOR
+vdd
+          ▼
+          |
+     A----[P]
+          |
+     B----[P]----+
+          |      |
+              A +-[N]--+--Y
+               |      |
+              B +-[N]--+
+                     |
+                     ▼
+                    gnd
+Y = AB + CD + E Circuit:
+
+        vdd
+         ▼
+         │
+   A ────┤<├─┐ PM0
+         │  │
+   B ────┤<├─┘
+         │
+   C ────┤<├─┐ PM1
+         │  │
+   D ────┤<├─┘
+         │
+   E ────┤<├────┬─── Y
+         │      │
+         │   ┌──┤>├──┐ NM0
+         │   │      │
+         │   └──┤>├──┘ NM1
+         │         │
+         ├───┤>├───┤ NM2
+         │         │
+         ├───┤>├───┘ NM3
+         │
+         ▼
+        gnd
+
+Legend:
+┤<├ - PMOS transistor
+┤>├ - NMOS transistor
+─── - Electrical connection
+│   - Vertical connection
+┌┐└┘ - Connection corners
+▼   - Power/Ground
