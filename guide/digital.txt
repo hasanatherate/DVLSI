@@ -21,6 +21,8 @@
 7. **Load Libraries and HDL Files**:  
    `read_lib /home/installs/cad/slow.lib`  
    `read_hdl filename.v`
+   'read_sdc .sdc file' for sdc files
+
 
 8. **Elaborate the Design**:  
    `elaborate`
