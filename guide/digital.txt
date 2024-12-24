@@ -22,7 +22,15 @@
    `read_lib /home/installs/cad/slow.lib`  
    `read_hdl filename.v`
    'read_sdc .sdc file' for sdc files
-
+for ALU  sdc
+set_db syn_generic_effort medium
+set_db syn_map_effort medium
+set_db syn_opt_effort medium
+syn_generic
+syn_map
+syn_opt
+write_hdl > alu_netlist.v
+write_sdc > alu_top.sdc
 
 8. **Elaborate the Design**:  
    `elaborate`
