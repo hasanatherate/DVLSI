@@ -19,7 +19,7 @@
    `genus -gui`
 
 7. **Load Libraries and HDL Files**:  
-   `read_lib /path/to/slow.lib`  
+   `read_lib /home/installs/cad/slow.lib`  
    `read_hdl filename.v`
 
 8. **Elaborate the Design**:  
